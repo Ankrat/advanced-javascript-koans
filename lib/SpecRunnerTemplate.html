@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Spec runner template</title>
+    <link rel="stylesheet" type="text/css" href="jasmine-1.0.1/jasmine.css">
+    <link rel="stylesheet" type="text/css" href="jskoans-jasmine/jskoans-jasmine.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="jasmine-1.0.1/jasmine.js"></script>
+    <script type="text/javascript" src="jasmine-1.0.1/jasmine-html.js"></script>
+    <script type="text/javascript" src="jskoans-jasmine/jskoans-jasmine-html.js"></script>
+    <script type="text/javascript">
+      describe('', function () {
+        it('', function () {
+        });
+      });
+      jasmine.getGlobal().__ = 'Fill this value in';
+      jasmine.getEnv().addReporter(new JsKoansReporter());
+      jasmine.getEnv().execute();
+    </script>
+  </body>
+</html>
