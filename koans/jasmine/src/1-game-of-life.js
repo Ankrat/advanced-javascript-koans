@@ -1,3 +1,6 @@
 function isCellAliveInNextGeneration(isCellAlive, numberOfNeighbours) {
-  throw 'Not implemented!';
+	if (numberOfNeighbours !== 3 && !isCellAlive) {
+		return isCellAlive;
+	}
+  return numberOfNeighbours < 2 || (isCellAlive && numberOfNeighbours >= 4) ? false : true;
 }
